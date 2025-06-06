@@ -1,53 +1,51 @@
-# Uni-Cho
-🎓 Uni-Cho: ابزار خودکار رفرش صفحه انتخاب واحد دانشگاه آزاد
+🎓 Uni-Cho: Auto Refresh Tool for Azad University Course Registration
 
-یک برنامه پایتون با رابط گرافیکی (PyQt5) که به صورت خودکار صفحه‌ی سامانه‌ی انتخاب واحد دانشگاه آزاد را رفرش می‌کند. این ابزار به دانشجوها کمک می‌کند تا در زمان‌های شلوغ، سریع‌تر به صفحه انتخاب واحد دسترسی داشته باشند.
+A Python GUI application (built with PyQt5) that automatically refreshes the course registration page of Azad University every 10 seconds by simulating F5 and Enter key presses. This tool helps students access the course selection page faster during heavy traffic times.
 
-⚠️  توجه: این برنامه هنوز در مرحله توسعه است و حالت زمان‌بندی کامل نشده ممکن است به درستی کار نکند
-
----
-
-📌 ویژگی‌ها
-
-	- باز کردن مستقیم صفحه ورود به سامانه آموزشی دانشگاه آزاد
-	- فشردن خودکار کلیدهای `F5` و `Enter` هر ۱۰ ثانیه
-	- دکمه‌های شروع و توقف عملیات (Start / Stop)
-	- امکان فعال‌سازی حالت زمان‌بندی برای اجرای خودکار در بازه زمانی مشخص (در حال توسعه 🚧)
-	- رابط کاربری گرافیکی ساده و کاربردی با PyQt5
+⚠️ **Note:** The **Scheduled Mode** feature is still under development and may not work as expected.
 
 ---
 
-🚀 نحوه اجرا
+📌 Features
 
-	۱. مطمئن شوید که پایتون روی سیستم شما نصب شده است.
+- Opens the Azad University registration login page directly
+- Automatically presses `F5` and `Enter` every 10 seconds
+- Start and Stop buttons to manually control the refresh process
+- Optional **Scheduled Mode** to run automatically between specific hours (⏳ *still incomplete*)
+- Simple and user-friendly PyQt5 interface
 
-	۲. نصب کتابخانه‌های مورد نیاز:
+---
+
+🚀 How to Run
+
+	1. Make sure Python is installed on your system.
+	2. Install the required dependencies:
 		pip install pyqt5 pyautogui
-	۳. اجرای برنامه:
+	3.Run the script:
 		python uni_cho.py
-	۴. مراحل استفاده:
+Usage Instructions:
 
-روی "Open Link" کلیک کنید تا وارد صفحه ورود سامانه شوید.
+Click "Open Link" to open the Azad University login page in your browser.
 
-پس از ورود، می‌توانید:
+After logging in:
 
-حالت عادی: روی Start کلیک کنید تا رفرش خودکار آغاز شود.
+You can start manual refresh with the "Start" button.
 
-حالت زمان‌بندی: ساعت شروع و پایان را مشخص کنید و Scheduled Mode را فعال کنید (توجه: در حال توسعه است).
+Or enable Scheduled Mode and set the start/end time (still under development).
 
-وقتی صفحه انتخاب واحد در دسترس قرار گرفت، عملیات را با Stop متوقف کنید.
+Once the course selection page is available, click "Stop" to disable automatic actions.
 
-🗂️ ساختار فایل‌ها
+🗂️ File Structure
 
-	uni_cho.py                # کد اصلی برنامه
-	README.md                 # مستندات پروژه
-⚠️ نکات مهم
+	uni_cho.py                # Main application script
+	README.md                 # Project documentation
+⚠️ Important Notes
 
-استفاده از این ابزار فقط برای اهداف آموزشی و شخصی طراحی شده است.
+This tool is designed specifically for use with Azad University's online registration system.
 
-عملکرد حالت زمان‌بندی هنوز کامل نشده و ممکن است همیشه دقیق کار نکند.
+The Scheduled Mode feature is incomplete and might not trigger at the exact time.
 
-از این ابزار مسئولانه استفاده کنید؛ استفاده نادرست ممکن است باعث اختلال در ورود شما یا دیگر کاربران شود.
+Use this script responsibly. Overuse may affect your or others' access to the system.
 
-👤 نویسنده
-	https://github.com/mahdiyar-tabatabaei
+👤 Author
+	[Mahdiyar Tabatabaei](https://github.com/mahdiyar-tabatabaei)
